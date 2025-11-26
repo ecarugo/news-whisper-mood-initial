@@ -29,7 +29,7 @@ export async function getTrendData(keyword: string): Promise<TrendData[]> {
       throw new Error("API 호출 실패");
     }
     const data = await response.json();
-
+console.log(data);
     // API 응답을 TrendData 형식으로 변환
     if (Array.isArray(data)) {
       return data.map((item) => ({

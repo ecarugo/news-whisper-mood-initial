@@ -1,8 +1,17 @@
 import { useState } from "react";
-import { KeywordSearch } from "@/components/KeywordSearch";
-import { TrendChart } from "@/components/TrendChart";
-import { SentimentChart } from "@/components/SentimentChart";
-import { getTrendData, getSentimentData, TrendData, SentimentData } from "@/lib/newsData";
+
+// 상대 경로로 모두 변경 (Lovable 빌드 필수)
+import { KeywordSearch } from "../components/KeywordSearch";
+import { TrendChart } from "../components/TrendChart";
+import { SentimentChart } from "../components/SentimentChart";
+
+import {
+  getTrendData,
+  getSentimentData,
+  TrendData,
+  SentimentData,
+} from "../lib/newsData";
+
 import { BarChart3 } from "lucide-react";
 
 const Index = () => {
@@ -14,12 +23,12 @@ const Index = () => {
     setKeyword(searchKeyword);
     setTrendData([]);
     setSentimentData([]);
-    
+
     const [trends, sentiments] = await Promise.all([
       getTrendData(searchKeyword),
       getSentimentData(searchKeyword),
     ]);
-    
+
     setTrendData(trends);
     setSentimentData(sentiments);
   };
@@ -69,3 +78,4 @@ const Index = () => {
 };
 
 export default Index;
+

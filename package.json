@@ -83,14 +83,6 @@
   },
   "description": "**URL**: https://lovable.dev/projects/8e589f55-101f-46c0-98c1-9a768d38aa50",
   "main": "eslint.config.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ecarugo/news-whisper-mood-initial.git"
-  },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ecarugo/news-whisper-mood-initial/issues"
-  },
-  "homepage": "https://github.com/ecarugo/news-whisper-mood-initial#readme"
+  "license": "ISC"
 }

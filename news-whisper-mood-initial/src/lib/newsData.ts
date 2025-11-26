@@ -106,7 +106,7 @@ function analyzeSentiment(content: string): "positive" | "negative" | "neutral" 
   return "neutral";
 }
 
-const API_URL = "https://cvcvrvofrlxwjuotvvpf.supabase.co/functions/v1";
+const API_URL = "https://zyozbxdhdprlnnvuusyg.supabase.co/functions/v1/news-trends";
 
 export async function getTrendData(keyword: string): Promise<TrendData[]> {
   try {
